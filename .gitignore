@@ -3,10 +3,10 @@ out/
 .idea/
 !**/src/main/**/out/
 !**/src/test/**/out/
+Java_Basic_Hillel.iml
 
 ### Eclipse ###
 .apt_generated
-Java_Basic_Hillel.iml
 .classpath
 .factorypath
 .project
