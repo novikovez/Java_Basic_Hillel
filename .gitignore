@@ -6,7 +6,7 @@ out/
 
 ### Eclipse ###
 .apt_generated
-.iml
+Java_Basic_Hillel.iml
 .classpath
 .factorypath
 .project
