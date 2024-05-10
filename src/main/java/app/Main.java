@@ -75,14 +75,14 @@ public class Main {
     }
 
     public static String isMagicSquare() {
-        int n = array.length;                           // длина массива
-        for (int[] ints : array) {                      // проверка на квадрат
-            if (ints.length != n) {                     // если длина подмассива не равна длине массива - false
+        int n = array.length;                           // Довжина масиву
+        for (int[] ints : array) {                      // перевірка на квадрат
+            if (ints.length != n) {                     // якщо довжина підмасиву не дорівнює довжині масиву - false
                 return string6;
             }
         }
 
-        int sum = 0;                                    // сумма первой строки для следующих проверок
+        int sum = 0;                                    // сума першого рядка для наступних перевірок
         for (int j = 0; j < n; j++) {
             sum += array[0][j];
         }
@@ -92,7 +92,7 @@ public class Main {
             for (int j = 0; j < n; j++) {
                 rowSum += array[i][j];
             }
-            if (rowSum != sum) {                        // сравнение остальных строк с первой
+            if (rowSum != sum) {                        // порівняння інших рядків з першим
                 return string6;
             }
         }
@@ -102,7 +102,7 @@ public class Main {
             for (int i = 0; i < n; i++) {
                 colSum += array[i][j];
             }
-            if (colSum != sum) {                        // Проверяем суммы столбцов с суммой первой строки
+            if (colSum != sum) {                        // Перевіряємо суми стовпців із сумою першого рядка
                 return string6;
             }
         }
@@ -111,18 +111,18 @@ public class Main {
         for (int i = 0; i < n; i++) {
             diagSum += array[i][i];
         }
-        if (diagSum != sum) {                           // Проверяем сумму главной диагонали
+        if (diagSum != sum) {                           // Перевіряємо суму головної діагоналі
             return string6;
         }
 
         int antiDiagSum = 0;
         for (int i = 0; i < n; i++) {
-            antiDiagSum += array[i][n - i - 1];         // Проверяем сумму побочной диагонали
+            antiDiagSum += array[i][n - i - 1];         // Перевіряємо суму побічної діагоналі
         }
         if (antiDiagSum != sum) {
             return string6;
         }
-        return string7;                                 // Если все суммы равны, то это магический квадрат
+        return string7;                                 // Якщо всі суми дорівнюють, то це магічний квадрат
     }
 }
 
