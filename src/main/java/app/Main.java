@@ -19,7 +19,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(string1);
+        System.out.print(string1);
         int input = scanner.nextInt();
         System.out.printf(string2, input, square(input));
 
@@ -32,19 +32,19 @@ public class Main {
         System.out.printf(string5, arrayOfIntegers(arrayInt));
 
         scanner.nextLine();
-        System.out.println(string6);
+        System.out.print(string6);
         String inputString = scanner.nextLine();
         System.out.printf(string7, string(inputString));
 
-        System.out.println(string8);
+        System.out.print(string8);
         int a = scanner.nextInt();
-        System.out.println(string9);
+        System.out.print(string9);
         int b = scanner.nextInt();
         System.out.printf(string10, a, b, degree(a, b));
 
-        System.out.println(string1);
+        System.out.print(string1);
         int value = scanner.nextInt();
-        System.out.println(string6);
+        System.out.print(string6);
         scanner.nextLine();
         String string = scanner.nextLine();
         stringAndInt(value, string);
