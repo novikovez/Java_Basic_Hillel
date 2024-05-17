@@ -4,6 +4,7 @@ public class Person {
     private String name;
     private int age;
     private String work;
+    private static final String string1 = "Ім'я: %s, Вік: %d, Професія: %s%n";
 
     public Person(String name, int age, String work) {
         this.name = name;
@@ -35,4 +36,7 @@ public class Person {
         return work;
     }
 
+    public String getString() {
+        return String.format(string1, name, age, work);
+    }
 }
