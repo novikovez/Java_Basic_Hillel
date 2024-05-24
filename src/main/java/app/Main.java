@@ -1,33 +1,23 @@
 package app;
 
-public class Main {
-    private static final String string2 = "(Після оновлення професії)";
-
+public class Main extends Language  {
     public static void main(String[] args) {
-        Person person1 = new Person(
-                "John",
-                30,
-                "Інженер");
+        Car car = new Car();
+        Staff staff = new Staff(
+                "Jack Jack",
+                "QA",
+                "mail@mail.com",
+                "+3804456554534",
+                32
+        );
 
-        Person person2 = new Person(
-                "Mary",
-                25,
-                "Вчитель");
+        System.out.println(ageOld + staff.getAge());            // Отримати вік
+        staff.setAge(44);                                       // Змінити вік
+        System.out.println(ageNew + staff.getAge());            // Отримати вік
+        System.out.println(staff);                              // toString
 
-        Person person3 = new Person(
-                "Bob",
-                35,
-                "Лікар");
-
-        System.out.print(person1.getString());
-        System.out.print(person2.getString());
-        System.out.print(person3.getString());
-
-        person3.setWork("Президент");
-
-        System.out.println(string2);
-        System.out.print(person3.getString());
+        car.start();                                            // Старт..
     }
-
 }
+
 
