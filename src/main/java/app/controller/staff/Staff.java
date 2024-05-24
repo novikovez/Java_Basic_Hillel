@@ -1,6 +1,9 @@
-package app;
+package app.controller.staff;
 
-public class Staff {
+
+import app.controller.language.Language;
+
+public class Staff extends Language {
     private String fio;
     private String job;
     private String email;
@@ -53,12 +56,12 @@ public class Staff {
         this.phone = phone;
     }
 
-    public int getAge() {
-        return age;
+    public String getAgeString() {
+        return Language.age + age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void incrementAge() {
+        this.age++;
     }
 
     @Override
