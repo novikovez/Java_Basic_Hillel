@@ -6,7 +6,7 @@ package app.enums;
 public enum DayEnum {
     MONDAY ("Понеділок"),
     TUESDAY ("Вівторок"),
-    WEDNESDAY ("Середовище"),
+    WEDNESDAY ("Середа"),
     THURSDAY ("Четвер"),
     FRIDAY ("П'ятниця"),
     SATURDAY ("Субота"),
