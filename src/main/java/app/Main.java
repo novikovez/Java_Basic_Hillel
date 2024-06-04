@@ -3,14 +3,18 @@ package app;
 | Автор: Igor Novikov |
 */
 
-import app.message.Message;
+import app.enums.DayEnum;
+import app.language.Language;
+import app.service.DayService;
 
-public class Main {
+public class Main extends Language {
+    private static final DayService dayService = new DayService();
+
     public static void main(String[] args) {
-        Message.run();
+        System.out.println(STRING4);
+        DayEnum day = dayService.getDayEnum();
+        System.out.println(dayService.advise(day));
     }
-
-
 }
 
 
