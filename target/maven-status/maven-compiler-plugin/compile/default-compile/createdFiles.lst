@@ -1,4 +1,0 @@
-app/exceptions/BadOperation.class
-app/exceptions/DivisionByZero.class
-app/CalculatorService.class
-app/Calculator.class
